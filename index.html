@@ -14,11 +14,11 @@
     <title>The Chuckle Chronicle</title>
   </head>
   <body>
-      <div class="container" />
-
+    <div class="container">
       <header>
         <div class="header-container"><h1>The Chuckle Chronicle</h1></div>
       </header>
+
       <section>
         <div class="header-section">
           <div class="header-line">
@@ -825,7 +825,7 @@
         </div>
       </section>
 
-      <hr class="line-separator" />
+      <hr />
 
       <section>
         <div class="support-container">
@@ -840,12 +840,14 @@
           </div>
         </div>
       </section>
-      <hr class="line-separator" />
+
+      <hr />
+
       <section>
         <div class="join-and-pricing-container">
           <div class="join-container">
-            <div><h2>Join the waitlist</h2></div>
-            <div>
+            <div class="join-item-text">
+              <h2>Join the waitlist</h2>
               <p>
                 We're not quite ready yet, but we will be soon! Sign up to the
                 waitlist and be the first in line. We'll certainly appreciate
@@ -853,20 +855,33 @@
               </p>
             </div>
             <div class="signup-container">
-              <div><input type="text" placeholder="Your email address" /></div>
-              <div><button>Sign up</button></div>
+              <div class="signup-input">
+                <input type="text" placeholder="Your email address" />
+              </div>
+              <div>
+                <a href="#"><div class="join-signup-button">Sign up</div></a>
+              </div>
             </div>
           </div>
+
           <div class="pricing-container">
             <div class="pricing-items">
               <div><h4>STANDARD</h4></div>
-              <div><h2>$5/month</h2></div>
-              <div><p>Your personal feed in the app and website.</p></div>
+              <div class="price-value">
+                <h2>$5</h2>
+                <span>/month</span>
+              </div>
+              <div class="pricing-details">
+                <p>Your personal feed in the app and website.</p>
+              </div>
             </div>
-            <div class="pricing-items">
+            <div class="pricing-items pro-pricing">
               <div><h4>PRO</h4></div>
-              <div><h2>$9/month</h2></div>
-              <div>
+              <div class="price-value">
+                <h2>$9</h2>
+                <span>/month</span>
+              </div>
+              <div class="pricing-details">
                 <p>
                   Your personal feed in the app and website + email digests on
                   your own schedule.
@@ -875,8 +890,11 @@
             </div>
             <div class="pricing-items">
               <div><h4>DEVELOPER</h4></div>
-              <div><h2>$8/month</h2></div>
-              <div>
+              <div class="price-value">
+                <h2>$8</h2>
+                <span>/ month</span>
+              </div>
+              <div class="pricing-details">
                 <p>
                   Use our REST API to turn RSS feeds into embeddable data for
                   your apps.
@@ -886,8 +904,9 @@
           </div>
         </div>
       </section>
-      <hr class="line-separator" />
+
       <footer>
+        <hr />
         <div class="footer-cotainer">
           <div><p>Icons by Tempo, font by Fontshare</p></div>
           <div><p>Contacts Legal notice</p></div>

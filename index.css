@@ -120,13 +120,14 @@ section video {
   text-align: center;
   font-size: 19px;
   margin: 5px;
+  color: #343a40;
 }
 
 .feature-items p {
   display: table;
   text-align: center;
   font-size: 17px;
-  color: #808080;
+  color: #868e96;
 }
 
 .feature-items svg {
@@ -144,18 +145,31 @@ section video {
 .support-container * {
   display: table;
   text-align: center;
+  margin-bottom: 0;
 }
 
-.line-separator {
+.support-container h2 {
+  font-size: 35px;
+}
+
+.support-container p {
+  font-size: 20px;
+  color: #868e96;
+}
+
+hr {
   border: 0;
-  height: 1px;
+  width: 90%;
   background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  background-image: linear-gradient(to right, #f1f3f5, #ced4da, #f1f3f5);
+  height: 1px;
 }
 
 .join-and-pricing-container {
   display: flex;
   flex-direction: column;
+  gap: 120px;
+  margin-bottom: 50px;
 }
 
 .join-container {
@@ -163,30 +177,134 @@ section video {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  gap: 40px;
 }
 
-.join-container :first-child h2 {
+.join-item-text h2 {
   text-align: center;
+  font-size: 40px;
+  margin-bottom: 0;
 }
 
-.join-container :nth-child(2) p {
+.join-item-text p {
   display: table;
   text-align: center;
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #868e96;
 }
 
 .signup-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  border: 2px solid #e9ecef;
+  border-radius: 5px;
+  gap: 10px;
 }
 
-.pricing-container {
+.signup-input {
+  flex-grow: 1;
+}
+
+.signup-input input {
+  width: 100%;
+  height: 40px;
+  margin-left: 15px;
+  font-family: 'Crimson Pro', serif;
+  font-size: 22px;
+  color: #868e96;
+  border: none;
+}
+
+.signup-input input:focus {
+  outline: none;
+}
+
+.signup-container a {
+  color: inherit;
+}
+
+.join-signup-button {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+  font-size: 20px;
+  background-color: rgb(23, 23, 168);
+  color: white;
+  border-color: rgb(23, 23, 168);
+  border-radius: 5px;
+  margin: 5px 20px;
+}
+
+.join-signup-button:hover {
+  background-color: rgba(23, 23, 168, 0.62);
+  border-color: rgb(23, 23, 168, 0.62);
+}
+.pricing-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.pro-pricing {
+  background-color: #f1f3f5;
 }
 
 .pricing-items {
   /* max-width: 150px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 10px;
 }
 
-.footer-container {
+.price-value {
   display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pricing-items * {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pricing-items h4 {
+  font-weight: 500;
+  color: #495057;
+}
+
+.pricing-items h2 {
+  display: inline;
+  /* color: #495057; */
+  font-size: 40px;
+}
+
+.pricing-items span {
+  font-size: 20px;
+  font-weight: 300;
+  color: #495057;
+}
+
+.pricing-details {
+  font-size: 17px;
+  font-weight: 500;
+  color: #343a40;
+}
+
+.footer-cotainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 300;
+  margin-bottom: 30px;
+  color: #343a40;
 }
